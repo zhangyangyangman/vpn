@@ -236,6 +236,30 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk/
       interval: 3600
+  v2rayshare-20241106:
+    type: http
+    url: https://v2rayshare.githubrowcontent.com/2024/11/20241106.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com.hk/
+      interval: 3600
+  20241106-clash:
+    type: http
+    url: https://freenode.openrunner.net/uploads/20241106-clash.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com.hk/
+      interval: 3600
+  windowsclashnode-20241106:
+    type: http
+    url: https://windowsclashnode.github.io/uploads/2024/11/0-20241106.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com.hk/
+      interval: 3600
 
 # proxy provider end
 # proxies:
@@ -287,6 +311,9 @@ proxy-groups:
       - v2rayshare-20241020
       - 20241020-clash
       - windowsclashnode-20241020
+      - v2rayshare-20241106
+      - 20241106-clash
+      - windowsclashnode-20241106
 
 rule-providers:
   Apple:
