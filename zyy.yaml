@@ -82,7 +82,7 @@ proxy-providers:
   #   interval: 3600
   #   health-check:
   #     enable: true
-  #     url: https://www.google.com.hk/
+  #     url: https://www.google.com/
   #     interval: 3600
   clash-provider:
     type: http
@@ -90,23 +90,23 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
-  freemc:
-    type: http
-    url: https://freemc.mcsslk.xyz/UPmsKiM
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com.hk/
-      interval: 3600
+  # freemc:
+  #   type: http
+  #   url: https://freemc.mcsslk.xyz/UPmsKiM
+  #   interval: 3600
+  #   health-check:
+  #     enable: true
+  #     url: https://www.google.com/
+  #     interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
   passcro:
     type: http
@@ -114,7 +114,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
   clashfree:
     type: http
@@ -122,7 +122,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
   v2rayshare:
     type: http
@@ -130,7 +130,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
   freenode:
     type: http
@@ -138,7 +138,7 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
       interval: 3600
   windowsclashnode:
     type: http
@@ -146,7 +146,23 @@ proxy-providers:
     interval: 3600
     health-check:
       enable: true
-      url: https://www.google.com.hk/
+      url: https://www.google.com/
+      interval: 3600
+  lailai159:
+    type: http
+    url: https://lailai159.serv00.net/uploads/2024/12/20241219.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
+  wp-content:
+    type: http
+    url: https://clashgithub.com/wp-content/uploads/rss/20241219.yml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
       interval: 3600
 
 # proxy provider end
@@ -166,7 +182,7 @@ proxy-groups:
 
   - name: 负载均衡
     type: load-balance
-    url: https://www.google.com.hk
+    url: https://www.google.com
     interval: 60
     # # 检测是否失效时间间隔
     # node-delete-interval: 60
@@ -186,13 +202,15 @@ proxy-groups:
     use:
       # - clash_meta_warp
       - clash-provider
-      - freemc
+      # - freemc
       - NoMoreWalls
       - passcro
       - clashfree
       - v2rayshare
       - freenode
       - windowsclashnode
+      - lailai159
+      - wp-content
 
 rule-providers:
   Apple:
