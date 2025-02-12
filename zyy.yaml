@@ -76,14 +76,14 @@ tun:
     - "1.0.0.1"
 # proxy provider start here
 proxy-providers:
-  # clash_meta_warp:
-  #   type: http
-  #   url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
-  #   interval: 3600
-  #   health-check:
-  #     enable: true
-  #     url: https://www.google.com/
-  #     interval: 3600
+  clash_meta_warp:
+    type: http
+    url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
@@ -92,14 +92,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  # freemc:
-  #   type: http
-  #   url: https://freemc.mcsslk.xyz/UPmsKiM
-  #   interval: 3600
-  #   health-check:
-  #     enable: true
-  #     url: https://www.google.com/
-  #     interval: 3600
+  freemc:
+    type: http
+    url: https://freemc.mcsslk.xyz/UPmsKiM
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
@@ -178,8 +178,21 @@ proxy-groups:
 
   - name: 自动选择
     type: url-test
-    proxies:
-      - 负载均衡
+    url: https://www.google.com
+    interval: 60
+#    proxies:
+    use:
+      - clash_meta_warp
+      - clash-provider
+      - freemc
+      - NoMoreWalls
+      - passcro
+      - clashfree
+      - v2rayshare
+      - freenode
+      - windowsclashnode
+      - lailai159
+      - wp-content
 
   - name: 负载均衡
     type: load-balance
@@ -201,9 +214,9 @@ proxy-groups:
     # 随机
     # strategy: random
     use:
-      # - clash_meta_warp
+      - clash_meta_warp
       - clash-provider
-      # - freemc
+      - freemc
       - NoMoreWalls
       - passcro
       - clashfree
