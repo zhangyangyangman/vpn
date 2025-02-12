@@ -407,6 +407,7 @@ rules:
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
   - DOMAIN-SUFFIX,githubrowcontent.com,节点选择
+  - DOMAIN-SUFFIX,github.io,节点选择
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
 
