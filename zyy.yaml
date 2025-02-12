@@ -158,7 +158,7 @@ proxy-providers:
       interval: 3600
   wp-content:
     type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20250212.yml
+    url: https://clashgithub.com/wp-content/uploads/rss/20250211.yml
     interval: 3600
     health-check:
       enable: true
