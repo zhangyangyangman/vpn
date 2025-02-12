@@ -404,6 +404,7 @@ rules:
   - RULE-SET,reject,REJECT-DROP
 
   # 这些是自定义规则，想要的可以继续加。
+  - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
   - DOMAIN-SUFFIX,githubrowcontent.com,节点选择
   - DOMAIN-SUFFIX,cnki.net,DIRECT
