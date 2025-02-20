@@ -408,7 +408,7 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400
+    interval: 3600
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
