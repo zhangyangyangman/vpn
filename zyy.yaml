@@ -142,7 +142,7 @@ proxy-providers:
       interval: 3600
   windowsclashnode:
     type: http
-    url: https://windowsclashnode.github.io/uploads/2025/05/0-20250509.yaml
+    url: https://windowsclashnode.github.io/uploads/2025/05/0-20250506.yaml
     interval: 3600
     health-check:
       enable: true
