@@ -92,14 +92,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  freemc:
-    type: http
-    url: https://freemc.mcsslk.xyz/UPmsKiM
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
+#  freemc:
+#    type: http
+#    url: https://freemc.mcsslk.xyz/UPmsKiM
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
@@ -116,14 +116,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  clashfree:
-    type: http
-    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
+#  clashfree:
+#    type: http
+#    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
   v2rayshare:
     type: http
     url: https://v2rayshare.githubrowcontent.com/2025/05/20250513.yaml
@@ -140,34 +140,30 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  windowsclashnode:
-    type: http
-    url: https://windowsclashnode.github.io/uploads/2025/05/0-20250513.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-  lailai159:
-    type: http
-    url: https://lailai159.serv00.net/uploads/2025/05/20250513.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-  wp-content:
-    type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20250513.yml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-
-# proxy provider end
-# proxies:
-#   - {name: 🇮🇪 中国-爱尔兰 IPLC C04, server: ir04.cathayroute.com, port: 33400, type: ss, cipher: rc4-md5, password: SRCFiB}
+#  windowsclashnode:
+#    type: http
+#    url: https://windowsclashnode.github.io/uploads/2025/05/0-20250513.yaml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
+#  lailai159:
+#    type: http
+#    url: https://lailai159.serv00.net/uploads/2025/05/20250513.yaml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
+#  wp-content:
+#    type: http
+#    url: https://clashgithub.com/wp-content/uploads/rss/20250513.yml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
 
 proxy-groups:
   - name: select
@@ -184,15 +180,15 @@ proxy-groups:
     use:
 #      - clash_meta_warp
       - clash-provider
-      - freemc
+#      - freemc
       - NoMoreWalls
       - passcro
-      - clashfree
+#      - clashfree
       - v2rayshare
       - freenode
-      - windowsclashnode
-      - lailai159
-      - wp-content
+#      - windowsclashnode
+#      - lailai159
+#      - wp-content
 
   - name: loadbalance
     type: load-balance
@@ -216,15 +212,15 @@ proxy-groups:
     use:
 #      - clash_meta_warp
       - clash-provider
-      - freemc
+#      - freemc
       - NoMoreWalls
       - passcro
-      - clashfree
+#      - clashfree
       - v2rayshare
       - freenode
-      - windowsclashnode
-      - lailai159
-      - wp-content
+#      - windowsclashnode
+#      - lailai159
+#      - wp-content
 
 rule-providers:
   Apple:
