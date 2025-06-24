@@ -126,7 +126,11 @@ proxy-providers:
 #      interval: 3600
   v2rayshare:
     type: http
+<<<<<<< HEAD
     url: https://v2rayshare.githubrowcontent.com/2025/06/20250624.yaml
+=======
+    url: https://v2rayshare.githubrowcontent.com/2025/06/20250621.yaml
+>>>>>>> 98ac59e9761daf5ed60db68be8cec80538dc45de
     interval: 3600
     health-check:
       enable: true
@@ -134,7 +138,11 @@ proxy-providers:
       interval: 3600
   freenode:
     type: http
+<<<<<<< HEAD
     url: https://freenode.openrunner.net/uploads/20250624-clash.yaml
+=======
+    url: https://freenode.openrunner.net/uploads/20250621-clash.yaml
+>>>>>>> 98ac59e9761daf5ed60db68be8cec80538dc45de
     interval: 3600
     health-check:
       enable: true
