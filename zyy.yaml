@@ -408,12 +408,14 @@ rule-providers:
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
+  
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
 
   # 这些是自定义规则，想要的可以继续加。
   - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,xuanyuan.me,DIRECT
   - DOMAIN-SUFFIX,python.org,DIRECT
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
