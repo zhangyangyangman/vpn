@@ -132,6 +132,15 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
+go4sharing:
+    type: http
+    url: https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
+
   freenode:
     type: http
     url: https://freenode.openrunner.net/uploads/20250707-clash.yaml
