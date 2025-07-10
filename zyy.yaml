@@ -194,6 +194,7 @@ proxy-groups:
       - passcro
 #      - clashfree
       - v2rayshare
+      - go4sharing
       - freenode
 #      - windowsclashnode
 #      - lailai159
@@ -227,6 +228,7 @@ proxy-groups:
 #      - clashfree
       - v2rayshare
       - freenode
+      - go4sharing
 #      - windowsclashnode
 #      - lailai159
 #      - wp-content
