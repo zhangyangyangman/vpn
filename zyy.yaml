@@ -426,6 +426,7 @@ rules:
 
   # 这些是自定义规则，想要的可以继续加。
   - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,snapcdn.app,DIRECT
   - DOMAIN-SUFFIX,xuanyuan.me,DIRECT
   - DOMAIN-SUFFIX,python.org,DIRECT
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
