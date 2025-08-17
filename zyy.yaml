@@ -76,14 +76,14 @@ tun:
     - "1.0.0.1"
 # proxy provider start here
 proxy-providers:
-  clash_meta_warp:
-    type: http
-    url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
+#  clash_meta_warp:
+#    type: http
+#    url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
@@ -92,14 +92,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  freemc:
-    type: http
-    url: https://freemc.mcsslk.xyz/UPmsKiM
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
+#  freemc:
+#    type: http
+#    url: https://freemc.mcsslk.xyz/UPmsKiM
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
@@ -116,17 +116,25 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  clashfree:
+#  clashfree:
+#    type: http
+#    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
+  v2rayshare:
     type: http
-    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
+    url: https://v2rayshare.githubrowcontent.com/2025/08/20250813.yaml
     interval: 3600
     health-check:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  v2rayshare:
+  go4sharing:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2025/02/20250224.yaml
+    url: https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml
     interval: 3600
     health-check:
       enable: true
@@ -134,67 +142,64 @@ proxy-providers:
       interval: 3600
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20250224-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20250813-clash.yaml
     interval: 3600
     health-check:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  windowsclashnode:
-    type: http
-    url: https://windowsclashnode.github.io/uploads/2025/02/0-20250224.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-  lailai159:
-    type: http
-    url: https://lailai159.serv00.net/uploads/2025/02/20250224.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-  wp-content:
-    type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20250224.yml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-
-# proxy provider end
-# proxies:
-#   - {name: 🇮🇪 中国-爱尔兰 IPLC C04, server: ir04.cathayroute.com, port: 33400, type: ss, cipher: rc4-md5, password: SRCFiB}
+#  windowsclashnode:
+#    type: http
+#    url: https://windowsclashnode.github.io/uploads/2025/06/0-20250603.yaml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
+#  lailai159:
+#    type: http
+#    url: https://lailai159.serv00.net/uploads/2025/05/20250513.yaml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
+#  wp-content:
+#    type: http
+#    url: https://clashgithub.com/wp-content/uploads/rss/20250513.yml
+#    interval: 3600
+#    health-check:
+#      enable: true
+#      url: https://www.google.com/
+#      interval: 3600
 
 proxy-groups:
-  - name: 节点选择
+  - name: select
     type: select
     proxies:
-      - 自动选择
-      - 负载均衡
+      - autoselect
+      - loadbalance
 
-  - name: 自动选择
+  - name: autoselect
     type: url-test
     url: https://www.google.com
     interval: 10
 #    proxies:
     use:
-      - clash_meta_warp
+#      - clash_meta_warp
       - clash-provider
-      - freemc
+#      - freemc
       - NoMoreWalls
       - passcro
-      - clashfree
+#      - clashfree
       - v2rayshare
+      - go4sharing
       - freenode
-      - windowsclashnode
-      - lailai159
-      - wp-content
+#      - windowsclashnode
+#      - lailai159
+#      - wp-content
 
-  - name: 负载均衡
+  - name: loadbalance
     type: load-balance
     url: https://www.google.com
     interval: 10
@@ -214,17 +219,18 @@ proxy-groups:
     # 随机
     # strategy: random
     use:
-      - clash_meta_warp
+#      - clash_meta_warp
       - clash-provider
-      - freemc
+#      - freemc
       - NoMoreWalls
       - passcro
-      - clashfree
+#      - clashfree
       - v2rayshare
       - freenode
-      - windowsclashnode
-      - lailai159
-      - wp-content
+      - go4sharing
+#      - windowsclashnode
+#      - lailai159
+#      - wp-content
 
 rule-providers:
   Apple:
@@ -408,20 +414,24 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400
+    interval: 36000
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
+  
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
 
   # 这些是自定义规则，想要的可以继续加。
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,snapcdn.app,DIRECT
+  - DOMAIN-SUFFIX,xuanyuan.me,DIRECT
   - DOMAIN-SUFFIX,python.org,DIRECT
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
-  - DOMAIN-SUFFIX,githubrowcontent.com,节点选择
-  - DOMAIN-SUFFIX,github.io,节点选择
+  - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,github.io,select
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
 
@@ -440,15 +450,15 @@ rules:
   - RULE-SET,LocalAreaNetwork,DIRECT
   - RULE-SET,Microsoft,DIRECT
 
-  - RULE-SET,gfw,节点选择
-  - RULE-SET,tld-not-cn,节点选择
-  - RULE-SET,Telegram,节点选择
-  - RULE-SET,ProxyLite,节点选择
-  - RULE-SET,ProxyMedia,节点选择
-  - RULE-SET,GoogleCN,节点选择
-  - RULE-SET,google,节点选择
-  - RULE-SET,proxy,节点选择
-  - RULE-SET,telegramcidr,节点选择
+  - RULE-SET,gfw,select
+  - RULE-SET,tld-not-cn,select
+  - RULE-SET,Telegram,select
+  - RULE-SET,ProxyLite,select
+  - RULE-SET,ProxyMedia,select
+  - RULE-SET,GoogleCN,select
+  - RULE-SET,google,select
+  - RULE-SET,proxy,select
+  - RULE-SET,telegramcidr,select
 
   - GEOIP,CN,DIRECT
-  - MATCH,节点选择
+  - MATCH,select
