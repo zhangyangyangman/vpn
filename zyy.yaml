@@ -76,14 +76,14 @@ tun:
     - "1.0.0.1"
 # proxy provider start here
 proxy-providers:
-#  clash_meta_warp:
-#    type: http
-#    url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
-#    interval: 3600
-#    health-check:
-#      enable: true
-#      url: https://www.google.com/
-#      interval: 3600
+  nodesfree:
+    type: http
+    url: https://nodesfree.github.io/clashnode/subscribe/clash.yml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
@@ -92,14 +92,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-#  freemc:
-#    type: http
-#    url: https://freemc.mcsslk.xyz/UPmsKiM
-#    interval: 3600
-#    health-check:
-#      enable: true
-#      url: https://www.google.com/
-#      interval: 3600
+  #  freemc:
+  #    type: http
+  #    url: https://freemc.mcsslk.xyz/UPmsKiM
+  #    interval: 3600
+  #    health-check:
+  #      enable: true
+  #      url: https://www.google.com/
+  #      interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
@@ -116,14 +116,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-#  clashfree:
-#    type: http
-#    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
-#    interval: 3600
-#    health-check:
-#      enable: true
-#      url: https://www.google.com/
-#      interval: 3600
+  #  clashfree:
+  #    type: http
+  #    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
+  #    interval: 3600
+  #    health-check:
+  #      enable: true
+  #      url: https://www.google.com/
+  #      interval: 3600
   v2rayshare:
     type: http
     url: https://v2rayshare.githubrowcontent.com/2025/08/20250813.yaml
@@ -184,20 +184,20 @@ proxy-groups:
     type: url-test
     url: https://www.google.com
     interval: 10
-#    proxies:
+    #    proxies:
     use:
-#      - clash_meta_warp
+      - nodesfree
       - clash-provider
-#      - freemc
+      #      - freemc
       - NoMoreWalls
       - passcro
-#      - clashfree
+      #      - clashfree
       - v2rayshare
       - go4sharing
       - freenode
-#      - windowsclashnode
-#      - lailai159
-#      - wp-content
+  #      - windowsclashnode
+  #      - lailai159
+  #      - wp-content
 
   - name: loadbalance
     type: load-balance
@@ -213,18 +213,18 @@ proxy-groups:
     # 轮询
     strategy: round-robin
     # 最小时延
-#    strategy: least-latency
+    #    strategy: least-latency
     # 最小负载
     # strategy: least-load
     # 随机
     # strategy: random
     use:
-#      - clash_meta_warp
+      - nodesfree
       - clash-provider
-#      - freemc
+      #      - freemc
       - NoMoreWalls
       - passcro
-#      - clashfree
+      #      - clashfree
       - v2rayshare
       - freenode
       - go4sharing
@@ -418,7 +418,7 @@ rule-providers:
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
-  
+
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
