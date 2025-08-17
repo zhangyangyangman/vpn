@@ -148,14 +148,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-#  windowsclashnode:
-#    type: http
-#    url: https://windowsclashnode.github.io/uploads/2025/06/0-20250603.yaml
-#    interval: 3600
-#    health-check:
-#      enable: true
-#      url: https://www.google.com/
-#      interval: 3600
+  ermaozi:
+    type: http
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
 #  lailai159:
 #    type: http
 #    url: https://lailai159.serv00.net/uploads/2025/05/20250513.yaml
@@ -195,7 +195,7 @@ proxy-groups:
       - v2rayshare
       - go4sharing
       - freenode
-  #      - windowsclashnode
+      - windowsclashnode
   #      - lailai159
   #      - wp-content
 
@@ -228,7 +228,7 @@ proxy-groups:
       - v2rayshare
       - freenode
       - go4sharing
-#      - windowsclashnode
+      - ermaozi
 #      - lailai159
 #      - wp-content
 
