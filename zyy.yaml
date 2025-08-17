@@ -116,14 +116,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  #  clashfree:
-  #    type: http
-  #    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
-  #    interval: 3600
-  #    health-check:
-  #      enable: true
-  #      url: https://www.google.com/
-  #      interval: 3600
+  xyfqzy:
+    type: http
+    url: https://raw.githubusercontent.com/xyfqzy/free-nodes/main/nodes/clash.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   v2rayshare:
     type: http
     url: https://v2rayshare.githubrowcontent.com/2025/08/20250813.yaml
@@ -191,7 +191,7 @@ proxy-groups:
       - shaoyouvip
       - NoMoreWalls
       - passcro
-      #      - clashfree
+      - xyfqzy
       - v2rayshare
       - go4sharing
       - freenode
@@ -224,7 +224,7 @@ proxy-groups:
       - shaoyouvip
       - NoMoreWalls
       - passcro
-      #      - clashfree
+      - xyfqzy
       - v2rayshare
       - freenode
       - go4sharing
