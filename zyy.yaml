@@ -110,7 +110,7 @@ proxy-providers:
       interval: 3600
   v2rayshare:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2025/07/20250830.yaml
+    url: https://v2rayshare.githubrowcontent.com/2025/09/20250905.yaml
     interval: 3600
     health-check:
       enable: true
@@ -126,7 +126,7 @@ proxy-providers:
       interval: 3600
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20250830-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20250905-clash.yaml
     interval: 3600
     health-check:
       enable: true
@@ -134,7 +134,7 @@ proxy-providers:
       interval: 3600
   windowsclashnode:
     type: http
-    url: https://windowsclashnode.github.io/uploads/2025/06/0-20250830.yaml
+    url: https://windowsclashnode.github.io/uploads/2025/09/0-20250905.yaml
     interval: 3600
     health-check:
       enable: true
@@ -142,7 +142,7 @@ proxy-providers:
       interval: 3600
   lailai159:
     type: http
-    url: https://lailai159.serv00.net/uploads/2025/05/20250830.yaml
+    url: https://lailai159.serv00.net/uploads/2025/09/20250905.yaml
     interval: 3600
     health-check:
       enable: true
@@ -150,7 +150,7 @@ proxy-providers:
       interval: 3600
   wp-content:
     type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20250830.yml
+    url: https://clashgithub.com/wp-content/uploads/rss/20250905.yml
     interval: 3600
     health-check:
       enable: true
@@ -168,7 +168,7 @@ proxy-groups:
     type: url-test
     url: https://www.google.com
     interval: 10
-#    proxies:
+    #    proxies:
     use:
       - clash-provider
       - NoMoreWalls
@@ -195,7 +195,7 @@ proxy-groups:
     # 轮询
     strategy: round-robin
     # 最小时延
-#    strategy: least-latency
+    #    strategy: least-latency
     # 最小负载
     # strategy: least-load
     # 随机
@@ -398,7 +398,7 @@ rule-providers:
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
-  
+
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
