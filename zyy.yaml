@@ -454,6 +454,10 @@ rules:
   - RULE-SET,proxy,select
   - RULE-SET,telegramcidr,select
 
+  - GEOSITE,google,select
+  - GEOSITE,cn,DIRECT
+
   - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT
   - MATCH,select
 
