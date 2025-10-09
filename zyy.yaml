@@ -1,4 +1,4 @@
-mixed-port: 7890
+mixed-port: 12345
 #---------------------------------------------------#
 ## 更新：2025-08-30 10:36:22
 ## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
@@ -27,9 +27,14 @@ dns:
   ipv6: true
   # listen: "0.0.0.0:53"
   use-hosts: true
-  # enhanced-mode: fake-ip
-  # fake-ip-range: 198.18.0.1/16
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   default-nameserver:
+    - 8.8.8.8
+    - 4.2.2.2
+    - 4.2.2.1
+    - 223.5.5.5
+    - 119.29.29.29
     - 114.114.114.114
     - 1.1.1.1
   nameserver:
@@ -190,7 +195,7 @@ proxy-groups:
       - lailai159
       - wp-content
 
-  - name: loadbalance
+  - name: load-balance
     type: load-balance
     url: https://www.google.com
     interval: 10
@@ -313,91 +318,91 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/reject.yaml
-    interval: 86400
+    interval: 3600
 
   icloud:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
     path: ./ruleset/icloud.yaml
-    interval: 86400
+    interval: 3600
 
   apple:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
     path: ./ruleset/apple.yaml
-    interval: 86400
+    interval: 3600
 
   google:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
     path: ./ruleset/google.yaml
-    interval: 86400
+    interval: 3600
 
   proxy:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
     path: ./ruleset/proxy.yaml
-    interval: 86400
+    interval: 3600
 
   direct:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
     path: ./ruleset/direct.yaml
-    interval: 86400
+    interval: 3600
 
   private:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
     path: ./ruleset/private.yaml
-    interval: 86400
+    interval: 3600
 
   gfw:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     path: ./ruleset/gfw.yaml
-    interval: 86400
+    interval: 3600
 
   greatfire:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
     path: ./ruleset/greatfire.yaml
-    interval: 86400
+    interval: 3600
 
   tld-not-cn:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
+    interval: 3600
 
   telegramcidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
-    interval: 86400
+    interval: 3600
 
   cncidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
-    interval: 86400
+    interval: 3600
 
   lancidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
-    interval: 86400
+    interval: 3600
 
   applications:
     type: http
