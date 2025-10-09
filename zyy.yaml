@@ -175,7 +175,7 @@ proxy-groups:
     type: select
     proxies:
       - autoselect
-      - loadbalance
+      - load-balance
 
   - name: autoselect
     type: url-test
