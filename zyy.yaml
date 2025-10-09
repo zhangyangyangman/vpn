@@ -123,7 +123,9 @@ proxy-providers:
       interval: 3600
   v2rayshare:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2025/10/20251008.yaml
+    url:
+    - https://v2rayshare.githubrowcontent.com/2025/10/20251008.yaml
+    - https://v2rayshare.githubrowcontent.com/2025/10/20251009.yaml
     interval: 3600
     health-check:
       enable: true
