@@ -461,3 +461,11 @@ rules:
   - GEOIP,LAN,DIRECT
   - MATCH,select
 
+geodata-mode: true
+geox-url:
+  geoip: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geoip.dat"
+  #  geosite: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geosite.dat"
+  geosite: "https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/country.mmdb"
+
+
