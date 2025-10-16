@@ -140,35 +140,35 @@ proxy-providers:
   freenode:
     type: http
     url: https://freenode.openrunner.net/uploads/20251016-clash.yaml
-    interval: 3600
+    interval: 10
     health-check:
       enable: true
       url: https://www.google.com/
-      interval: 3600
+      interval: 10
   windowsclashnode:
     type: http
     url: https://windowsclashnode.github.io/uploads/2025/10/0-20251016.yaml
-    interval: 3600
+    interval: 10
     health-check:
       enable: true
       url: https://www.google.com/
-      interval: 3600
+      interval: 10
   lailai159:
     type: http
     url: https://lailai159.serv00.net/uploads/2025/10/20251016.yaml
-    interval: 3600
+    interval: 10
     health-check:
       enable: true
       url: https://www.google.com/
-      interval: 3600
+      interval: 10
   wp-content:
     type: http
     url: https://clashgithub.com/wp-content/uploads/rss/20251016.yml
-    interval: 3600
+    interval: 10
     health-check:
       enable: true
       url: https://www.google.com/
-      interval: 3600
+      interval: 10
 
 proxy-groups:
   - name: select
@@ -180,7 +180,7 @@ proxy-groups:
   - name: autoselect
     type: url-test
     url: https://www.google.com
-    interval: 10
+    interval: 5
     #    proxies:
     use:
       - clash-provider
@@ -198,18 +198,18 @@ proxy-groups:
   - name: load-balance
     type: load-balance
     url: https://www.google.com
-    interval: 10
+    interval: 5
     # # 检测是否失效时间间隔
-    # node-delete-interval: 60
+    # node-delete-interval: 5
     # # 失效最大次数删除节点
     # node-fail-limit: 5
 
     # 散列
     # strategy: consistent-hashing
     # 轮询
-    strategy: round-robin
+    #strategy: round-robin
     # 最小时延
-    #    strategy: least-latency
+    strategy: least-latency
     # 最小负载
     # strategy: least-load
     # 随机
