@@ -209,9 +209,9 @@ proxy-groups:
     # 轮询
     #strategy: round-robin
     # 最小时延
-    #strategy: least-latency
+    strategy: least-latency
     # 最小负载
-    strategy: least-load
+    #strategy: least-load
     # 随机
     # strategy: random
     use:
