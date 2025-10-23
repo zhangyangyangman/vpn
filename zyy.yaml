@@ -199,10 +199,10 @@ proxy-groups:
     type: load-balance
     url: https://www.google.com
     interval: 5
-    # # 检测是否失效时间间隔
-    # node-delete-interval: 5
-    # # 失效最大次数删除节点
-    # node-fail-limit: 5
+    # 检测是否失效时间间隔
+    node-delete-interval: 5
+    # 失效最大次数删除节点
+    node-fail-limit: 5
 
     # 散列
     # strategy: consistent-hashing
