@@ -81,6 +81,14 @@ tun:
     - "1.0.0.1"
 # proxy provider start here
 proxy-providers:
+  snakem982:
+    type: http
+    url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   hello-world-1989:
     type: http
     url: https://raw.githubusercontent.com/hello-world-1989/cn-news/refs/heads/main/clash.yaml
@@ -199,6 +207,7 @@ proxy-groups:
     interval: 5
     #    proxies:
     use:
+      - snakem982
       - nodesfree
       - hello-world-1989
       - clash-provider
@@ -233,6 +242,7 @@ proxy-groups:
     # 随机
     # strategy: random
     use:
+      - snakem982
       - nodesfree
       - hello-world-1989
       - clash-provider
