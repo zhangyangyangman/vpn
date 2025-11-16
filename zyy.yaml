@@ -89,6 +89,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
+  nodesfree:
+    type: http
+    url: https://nodesfree.github.io/clashnode/clash.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: https://www.google.com/
+      interval: 3600
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
@@ -191,6 +199,7 @@ proxy-groups:
     interval: 5
     #    proxies:
     use:
+      - nodesfree
       - hello-world-1989
       - clash-provider
       - ExclaveVirtual
@@ -224,6 +233,7 @@ proxy-groups:
     # 随机
     # strategy: random
     use:
+      - nodesfree
       - hello-world-1989
       - clash-provider
       - ExclaveVirtual
