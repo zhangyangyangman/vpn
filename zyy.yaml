@@ -232,9 +232,9 @@ proxy-groups:
     node-fail-limit: 5
 
     # 散列
-    strategy: consistent-hashing
+    # strategy: consistent-hashing
     # 轮询
-    #    strategy: round-robin
+    strategy: round-robin
     # 最小时延
     # strategy: least-latency
     # 最小负载
