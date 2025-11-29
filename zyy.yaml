@@ -147,7 +147,7 @@ proxy-providers:
       interval: 3600
   v2rayshare:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2025/11/20251121.yaml
+    url: https://v2rayshare.githubrowcontent.com/2025/11/20251129.yaml
     interval: 3600
     health-check:
       enable: true
@@ -163,7 +163,7 @@ proxy-providers:
       interval: 3600
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20251121-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20251129-clash.yaml
     interval: 10
     health-check:
       enable: true
@@ -171,7 +171,7 @@ proxy-providers:
       interval: 10
   windowsclashnode:
     type: http
-    url: https://windowsclashnode.github.io/uploads/2025/11/0-20251121.yaml
+    url: https://windowsclashnode.github.io/uploads/2025/11/0-20251129.yaml
     interval: 10
     health-check:
       enable: true
@@ -179,7 +179,7 @@ proxy-providers:
       interval: 10
   lailai159:
     type: http
-    url: https://lailai159.serv00.net/uploads/2025/11/20251121.yaml
+    url: https://lailai159.serv00.net/uploads/2025/11/20251129.yaml
     interval: 10
     health-check:
       enable: true
@@ -187,7 +187,7 @@ proxy-providers:
       interval: 10
   wp-content:
     type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20251121.yml
+    url: https://clashgithub.com/wp-content/uploads/rss/20251129.yml
     interval: 10
     health-check:
       enable: true
