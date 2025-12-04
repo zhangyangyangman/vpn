@@ -113,14 +113,6 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 3600
-  ExclaveVirtual:
-    type: http
-    url: https://raw.githubusercontent.com/imalrzai/ExclaveVirtual/refs/heads/main/ExclaveVirtual
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
@@ -132,14 +124,6 @@ proxy-providers:
   passcro:
     type: http
     url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 3600
-  clashfree:
-    type: http
-    url: https://github.com/aiboboxx/clashfree/blob/main/clash.yml
     interval: 3600
     health-check:
       enable: true
@@ -177,14 +161,6 @@ proxy-providers:
       enable: true
       url: https://www.google.com/
       interval: 10
-  lailai159:
-    type: http
-    url: https://lailai159.serv00.net/uploads/2025/12/20251204.yaml
-    interval: 10
-    health-check:
-      enable: true
-      url: https://www.google.com/
-      interval: 10
   wp-content:
     type: http
     url: https://clashgithub.com/wp-content/uploads/rss/20251204.yml
@@ -211,15 +187,12 @@ proxy-groups:
       - nodesfree
       - hello-world-1989
       - clash-provider
-      - ExclaveVirtual
       - NoMoreWalls
       - passcro
-      - clashfree
       - v2rayshare
       - go4sharing
       - freenode
       - windowsclashnode
-      - lailai159
       - wp-content
 
   - name: load-balance
@@ -248,15 +221,12 @@ proxy-groups:
       - nodesfree
       - hello-world-1989
       - clash-provider
-      - ExclaveVirtual
       - NoMoreWalls
       - passcro
-      - clashfree
       - v2rayshare
       - go4sharing
       - freenode
       - windowsclashnode
-      - lailai159
       - wp-content
 
 rule-providers:
