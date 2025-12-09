@@ -421,6 +421,7 @@ rules:
   - RULE-SET,reject,REJECT-DROP
 
   # 这些是自定义规则，想要的可以继续加。
+  - DOMAIN-SUFFIX,eclipse.org,DIRECT
   - DOMAIN-SUFFIX,filezilla-project.org,DIRECT
   - DOMAIN-SUFFIX,nodejs.org,DIRECT
   - DOMAIN-SUFFIX,sublimetext.com,DIRECT
