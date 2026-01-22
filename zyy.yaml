@@ -123,7 +123,7 @@ proxy-providers:
       interval: 120
   v2rayshare:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2026/01/20260120.yaml
+    url: https://v2rayshare.githubrowcontent.com/2026/01/20260122.yaml
     interval: 120
     health-check:
       enable: true
@@ -139,7 +139,7 @@ proxy-providers:
       interval: 120
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20260120-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20260122-clash.yaml
     interval: 120
     health-check:
       enable: true
@@ -147,7 +147,7 @@ proxy-providers:
       interval: 120
   windowsclashnode:
     type: http
-    url: https://windowsclashnode.github.io/uploads/2026/01/0-20260120.yaml
+    url: https://windowsclashnode.github.io/uploads/2026/01/0-20260122.yaml
     interval: 120
     health-check:
       enable: true
@@ -155,7 +155,7 @@ proxy-providers:
       interval: 120
   wp-content:
     type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20260120.yml
+    url: https://clashgithub.com/wp-content/uploads/rss/20260122.yml
     interval: 120
     health-check:
       enable: true
