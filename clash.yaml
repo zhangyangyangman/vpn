@@ -430,6 +430,9 @@ rules:
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
 
+
+  - DOMAIN-SUFFIX,wireshark.org,DIRECT
+
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
   - RULE-SET,private,DIRECT
