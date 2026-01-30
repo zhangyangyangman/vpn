@@ -435,6 +435,10 @@ rules:
   - DOMAIN-SUFFIX,bilibili.com,select
   - DOMAIN-SUFFIX,douyin.com,select
   - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,douyinvod.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
 
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
