@@ -439,7 +439,7 @@ rules:
   - DOMAIN-SUFFIX,zijieapi.com,select
   - DOMAIN-SUFFIX,douyincdn.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinpic.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
