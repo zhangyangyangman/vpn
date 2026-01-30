@@ -425,14 +425,16 @@ rules:
   - DOMAIN-SUFFIX,python.org,DIRECT
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
-  - DOMAIN-SUFFIX,githubrowcontent.com,select
-  - DOMAIN-SUFFIX,github.io,select
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
+  - DOMAIN-SUFFIX,wireshark.org,DIRECT
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
 
-
-  - DOMAIN-SUFFIX,wireshark.org,DIRECT
+  - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,github.io,select
+  - DOMAIN-SUFFIX,bilibili.com,select
+  - DOMAIN-SUFFIX,douyin.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
 
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
