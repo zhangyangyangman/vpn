@@ -439,6 +439,17 @@ rules:
   - DOMAIN-SUFFIX,zijieapi.com,select
   - DOMAIN-SUFFIX,douyincdn.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
 
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
