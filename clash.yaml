@@ -432,24 +432,24 @@ rules:
 
   - DOMAIN-SUFFIX,githubrowcontent.com,select
   - DOMAIN-SUFFIX,github.io,select
-  - DOMAIN-SUFFIX,bilibili.com,select
-  - DOMAIN-SUFFIX,douyin.com,select
-  - DOMAIN-SUFFIX,douyinstatic.com,select
-  - DOMAIN-SUFFIX,douyinvod.com,select
-  - DOMAIN-SUFFIX,zijieapi.com,select
-  - DOMAIN-SUFFIX,douyincdn.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinpic.com,select
-  - DOMAIN-SUFFIX,bytedance.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,bilibili.com,select
+#  - DOMAIN-SUFFIX,douyin.com,select
+#  - DOMAIN-SUFFIX,douyinstatic.com,select
+#  - DOMAIN-SUFFIX,douyinvod.com,select
+#  - DOMAIN-SUFFIX,zijieapi.com,select
+#  - DOMAIN-SUFFIX,douyincdn.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinpic.com,select
+#  - DOMAIN-SUFFIX,bytedance.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
+#  - DOMAIN-SUFFIX,douyinliving.com,select
 
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
