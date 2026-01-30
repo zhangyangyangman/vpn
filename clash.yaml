@@ -436,7 +436,7 @@ rules:
   - DOMAIN-SUFFIX,douyin.com,select
   - DOMAIN-SUFFIX,douyinstatic.com,select
   - DOMAIN-SUFFIX,douyinvod.com,select
-  - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,zijieapi.com,select
   - DOMAIN-SUFFIX,douyinstatic.com,select
   - DOMAIN-SUFFIX,douyinstatic.com,select
 
