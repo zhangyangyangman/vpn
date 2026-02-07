@@ -479,9 +479,8 @@ rules:
 
   - GEOSITE,google,select
   - GEOSITE,cn,DIRECT
-
-  #  - GEOIP,CN,DIRECT
-  #  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT
   - MATCH,select
 
 geodata-mode: true
