@@ -407,7 +407,6 @@ rule-providers:
 
 rules:
   # 下面的规则是通过上面的rule-provider来确定的
-  - IP-CIDR, 168.1.23.0/24, DIRECT
 
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
@@ -444,6 +443,9 @@ rules:
   - GEOIP,LAN,DIRECT
 
   # 这些是自定义规则，想要的可以继续加。
+
+  - IP-CIDR, 168.1.23.0/24, DIRECT
+
   - DOMAIN-SUFFIX,msn.cn,DIRECT
   - DOMAIN-SUFFIX,fydeos.io,DIRECT
   - DOMAIN-SUFFIX,eclipse.org,DIRECT
