@@ -429,7 +429,7 @@ rules:
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
   - DOMAIN-SUFFIX,wireshark.org,DIRECT
-  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+#  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
 
   - DOMAIN-SUFFIX,githubrowcontent.com,select
   - DOMAIN-SUFFIX,github.io,select
