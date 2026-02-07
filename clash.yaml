@@ -413,45 +413,6 @@ rules:
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
 
-  # 这些是自定义规则，想要的可以继续加。
-  - DOMAIN-SUFFIX,msn.cn,DIRECT
-  - DOMAIN-SUFFIX,fydeos.io,DIRECT
-  - DOMAIN-SUFFIX,eclipse.org,DIRECT
-  - DOMAIN-SUFFIX,filezilla-project.org,DIRECT
-  - DOMAIN-SUFFIX,nodejs.org,DIRECT
-  - DOMAIN-SUFFIX,sublimetext.com,DIRECT
-  - DOMAIN-SUFFIX,heidisql.com,DIRECT
-  - DOMAIN-SUFFIX,microsoft.com,DIRECT
-  - DOMAIN-SUFFIX,xuanyuan.me,DIRECT
-  - DOMAIN-SUFFIX,python.org,DIRECT
-  - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
-  - DOMAIN-SUFFIX,todesk.com,DIRECT
-  - DOMAIN-SUFFIX,cnki.net,DIRECT
-  - DOMAIN-SUFFIX,jetbrains.com,DIRECT
-  - DOMAIN-SUFFIX,wireshark.org,DIRECT
-  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
-
-  - DOMAIN-SUFFIX,githubrowcontent.com,select
-  - DOMAIN-SUFFIX,github.io,select
-#  - DOMAIN-SUFFIX,bilibili.com,select
-#  - DOMAIN-SUFFIX,douyin.com,select
-#  - DOMAIN-SUFFIX,douyinstatic.com,select
-#  - DOMAIN-SUFFIX,douyinvod.com,select
-#  - DOMAIN-SUFFIX,zijieapi.com,select
-#  - DOMAIN-SUFFIX,douyincdn.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinpic.com,select
-#  - DOMAIN-SUFFIX,bytedance.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-#  - DOMAIN-SUFFIX,douyinliving.com,select
-
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
   - RULE-SET,private,DIRECT
@@ -481,6 +442,50 @@ rules:
   - GEOSITE,cn,DIRECT
   - GEOIP,CN,DIRECT
   - GEOIP,LAN,DIRECT
+
+  # 这些是自定义规则，想要的可以继续加。
+  - DOMAIN-SUFFIX,msn.cn,DIRECT
+  - DOMAIN-SUFFIX,fydeos.io,DIRECT
+  - DOMAIN-SUFFIX,eclipse.org,DIRECT
+  - DOMAIN-SUFFIX,filezilla-project.org,DIRECT
+  - DOMAIN-SUFFIX,nodejs.org,DIRECT
+  - DOMAIN-SUFFIX,sublimetext.com,DIRECT
+  - DOMAIN-SUFFIX,heidisql.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,xuanyuan.me,DIRECT
+  - DOMAIN-SUFFIX,python.org,DIRECT
+  - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
+  - DOMAIN-SUFFIX,todesk.com,DIRECT
+  - DOMAIN-SUFFIX,cnki.net,DIRECT
+  - DOMAIN-SUFFIX,jetbrains.com,DIRECT
+  - DOMAIN-SUFFIX,wireshark.org,DIRECT
+  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
+
+  - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,github.io,select
+  #  - DOMAIN-SUFFIX,bilibili.com,select
+  #  - DOMAIN-SUFFIX,douyin.com,select
+  #  - DOMAIN-SUFFIX,douyinstatic.com,select
+  #  - DOMAIN-SUFFIX,douyinvod.com,select
+  #  - DOMAIN-SUFFIX,zijieapi.com,select
+  #  - DOMAIN-SUFFIX,douyincdn.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinpic.com,select
+  #  - DOMAIN-SUFFIX,bytedance.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+
+
+
+
+
   - MATCH,select
 
 geodata-mode: true
