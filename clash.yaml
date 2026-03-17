@@ -79,7 +79,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   hello-world-1989:
     type: http
@@ -87,7 +87,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   nodesfree:
     type: http
@@ -95,7 +95,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   clash-provider:
     type: http
@@ -103,7 +103,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   NoMoreWalls:
     type: http
@@ -111,7 +111,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   passcro:
     type: http
@@ -119,7 +119,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   v2rayshare:
     type: http
@@ -127,7 +127,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   go4sharing:
     type: http
@@ -135,7 +135,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   freenode:
     type: http
@@ -143,7 +143,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   windowsclashnode:
     type: http
@@ -151,7 +151,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   wp-content:
     type: http
@@ -159,19 +159,20 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
 
 proxy-groups:
   - name: select
-    type: select
+    type: url-test
+    url: https://www.google.com.hk
     proxies:
       - autoselect
       - load-balance
 
   - name: autoselect
     type: url-test
-    url: https://www.google.com
+    url: https://www.google.com.hk
     interval: 5
     #    proxies:
     use:
@@ -189,7 +190,7 @@ proxy-groups:
 
   - name: load-balance
     type: load-balance
-    url: https://www.google.com
+    url: https://www.google.com.hk
     interval: 5
     # 检测是否失效时间间隔
     node-delete-interval: 5
