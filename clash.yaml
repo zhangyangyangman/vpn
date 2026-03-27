@@ -169,6 +169,22 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 120
+  zaixianyouxi:
+    type: http
+    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/3/20260327.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  ermaozi:
+    type: http
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
 
 proxy-groups:
   - name: select
@@ -196,6 +212,8 @@ proxy-groups:
       - windowsclashnode
       - wp-content
       - tosslk
+      - zaixianyouxi
+      - ermaozi
 
   - name: load-balance
     type: load-balance
@@ -231,6 +249,8 @@ proxy-groups:
       - windowsclashnode
       - wp-content
       - tosslk
+      - zaixianyouxi
+      - ermaozi
 
 rule-providers:
   Apple:
