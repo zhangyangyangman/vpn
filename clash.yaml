@@ -161,6 +161,14 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 120
+  tosslk:
+    type: http
+    url: https://OTu0hh.tosslk.xyz/97c714b830729202e7465a1953a3e93e
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
 
 proxy-groups:
   - name: select
@@ -187,6 +195,7 @@ proxy-groups:
       - freenode
       - windowsclashnode
       - wp-content
+      - tosslk
 
   - name: load-balance
     type: load-balance
@@ -221,6 +230,7 @@ proxy-groups:
       - freenode
       - windowsclashnode
       - wp-content
+      - tosslk
 
 rule-providers:
   Apple:
