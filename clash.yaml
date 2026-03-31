@@ -495,6 +495,7 @@ rules:
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
 
   - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,githubusercontent.com,select
   - DOMAIN-SUFFIX,github.io,select
   - DOMAIN-SUFFIX,go.dev,select
   #  - DOMAIN-SUFFIX,bilibili.com,select
