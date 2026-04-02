@@ -445,6 +445,7 @@ rules:
   - IP-CIDR, 172.16.0.0/16, DIRECT
   - IP-CIDR, 192.168.0.0/16, DIRECT
 
+  - DOMAIN-SUFFIX,rarlab.com,DIRECT
   - DOMAIN-SUFFIX,msn.cn,DIRECT
   - DOMAIN-SUFFIX,fydeos.io,DIRECT
   - DOMAIN-SUFFIX,eclipse.org,DIRECT
