@@ -475,7 +475,9 @@ rules:
 
   # 这些是自定义规则，想要的可以继续加。
 
-  - IP-CIDR, 168.1.23.0/24, DIRECT
+  - IP-CIDR, 168.1.0.0/16, DIRECT
+  - IP-CIDR, 172.16.0.0/16, DIRECT
+  - IP-CIDR, 192.168.0.0/16, DIRECT
 
   - DOMAIN-SUFFIX,msn.cn,DIRECT
   - DOMAIN-SUFFIX,fydeos.io,DIRECT
