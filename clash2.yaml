@@ -463,35 +463,6 @@ rules:
   - DOMAIN-SUFFIX,wireshark.org,DIRECT
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
 
-  - DOMAIN-SUFFIX,githubrowcontent.com,select
-  - DOMAIN-SUFFIX,githubusercontent.com,select
-  - DOMAIN-SUFFIX,github.io,select
-  - DOMAIN-SUFFIX,google.com,select
-  - DOMAIN-SUFFIX,google.com.hk,select
-  - DOMAIN-SUFFIX,go.dev,select
-  - DOMAIN-SUFFIX,azul.com,select
-  - DOMAIN-SUFFIX,adoptium.net,select
-  - DOMAIN-SUFFIX,go.dev,select
-  - DOMAIN-SUFFIX,go.dev,select
-  - DOMAIN-SUFFIX,bilibili.com,select
-  - DOMAIN-SUFFIX,douyin.com,select
-  - DOMAIN-SUFFIX,douyinstatic.com,select
-  - DOMAIN-SUFFIX,douyinvod.com,select
-  - DOMAIN-SUFFIX,zijieapi.com,select
-  - DOMAIN-SUFFIX,douyincdn.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinpic.com,select
-  - DOMAIN-SUFFIX,bytedance.com,select
-  - DOMAIN-SUFFIX,zjcdn.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-
   # 下面的规则是通过上面的rule-provider来确定的
   - RULE-SET,BanAD,REJECT-DROP
   - RULE-SET,BanProgramAD,REJECT-DROP
@@ -527,6 +498,35 @@ rules:
   - GEOIP,CN,DIRECT
   - GEOIP,LAN,DIRECT
 
+  - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,githubusercontent.com,select
+  - DOMAIN-SUFFIX,github.io,select
+  - DOMAIN-SUFFIX,google.com,select
+  - DOMAIN-SUFFIX,google.com.hk,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,azul.com,select
+  - DOMAIN-SUFFIX,adoptium.net,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,bilibili.com,select
+  - DOMAIN-SUFFIX,douyin.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,douyinvod.com,select
+  - DOMAIN-SUFFIX,zijieapi.com,select
+  - DOMAIN-SUFFIX,douyincdn.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinpic.com,select
+  - DOMAIN-SUFFIX,bytedance.com,select
+  - DOMAIN-SUFFIX,zjcdn.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  -
   - MATCH,select
 
 geodata-mode: true
