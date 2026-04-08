@@ -79,7 +79,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   hello-world-1989:
     type: http
@@ -87,7 +87,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   nodesfree:
     type: http
@@ -95,7 +95,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   clash-provider:
     type: http
@@ -103,7 +103,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   NoMoreWalls:
     type: http
@@ -111,7 +111,7 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   passcro:
     type: http
@@ -119,15 +119,15 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   v2rayshare:
     type: http
-    url: https://v2rayshare.githubrowcontent.com/2026/04/20260402.yaml
+    url: https://static.v2rayshare.net/2026/04/20260408.yaml
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   go4sharing:
     type: http
@@ -135,43 +135,68 @@ proxy-providers:
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20260402-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20260408-clash.yaml
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   windowsclashnode:
     type: http
-    url: https://windowsclashnode.github.io/uploads/2026/04/0-20260402.yaml
+    url: https://windowsclashnode.github.io/uploads/2026/04/0-20260408.yaml
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
       interval: 120
   wp-content:
     type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20260402.yml
+    url: https://clashgithub.com/wp-content/uploads/rss/20260408.yml
     interval: 120
     health-check:
       enable: true
-      url: https://www.google.com/
+      url: https://www.google.com.hk
+      interval: 120
+  tosslk:
+    type: http
+    url: https://OTu0hh.tosslk.xyz/97c714b830729202e7465a1953a3e93e
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  zaixianyouxi:
+    type: http
+    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/4/20260408.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  ermaozi:
+    type: http
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
       interval: 120
 
 proxy-groups:
   - name: select
-    type: select
+    type: url-test
+    url: https://www.google.com.hk
     proxies:
       - autoselect
       - load-balance
 
   - name: autoselect
     type: url-test
-    url: https://www.google.com
+    url: https://www.google.com.hk
     interval: 5
     #    proxies:
     use:
@@ -186,10 +211,13 @@ proxy-groups:
       - freenode
       - windowsclashnode
       - wp-content
+      - tosslk
+      - zaixianyouxi
+      - ermaozi
 
   - name: load-balance
     type: load-balance
-    url: https://www.google.com
+    url: https://www.google.com.hk
     interval: 5
     # 检测是否失效时间间隔
     node-delete-interval: 5
@@ -220,6 +248,9 @@ proxy-groups:
       - freenode
       - windowsclashnode
       - wp-content
+      - tosslk
+      - zaixianyouxi
+      - ermaozi
 
 rule-providers:
   Apple:
@@ -406,13 +437,15 @@ rule-providers:
     interval: 36000
 
 rules:
-  # 下面的规则是通过上面的rule-provider来确定的
 
-  - RULE-SET,BanAD,REJECT-DROP
-  - RULE-SET,BanProgramAD,REJECT-DROP
-  - RULE-SET,reject,REJECT-DROP
 
   # 这些是自定义规则，想要的可以继续加。
+
+  - IP-CIDR, 168.1.0.0/16, DIRECT
+  - IP-CIDR, 172.16.0.0/16, DIRECT
+  - IP-CIDR, 192.168.0.0/16, DIRECT
+
+  - DOMAIN-SUFFIX,rarlab.com,DIRECT
   - DOMAIN-SUFFIX,msn.cn,DIRECT
   - DOMAIN-SUFFIX,fydeos.io,DIRECT
   - DOMAIN-SUFFIX,eclipse.org,DIRECT
@@ -425,17 +458,44 @@ rules:
   - DOMAIN-SUFFIX,python.org,DIRECT
   - DOMAIN-SUFFIX,mvnrepository.com,DIRECT
   - DOMAIN-SUFFIX,todesk.com,DIRECT
-  - DOMAIN-SUFFIX,githubrowcontent.com,select
-  - DOMAIN-SUFFIX,github.io,select
   - DOMAIN-SUFFIX,cnki.net,DIRECT
   - DOMAIN-SUFFIX,jetbrains.com,DIRECT
-  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
   - DOMAIN-SUFFIX,wireshark.org,DIRECT
+  - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
 
   - DOMAIN-SUFFIX,githubrowcontent.com,select
+  - DOMAIN-SUFFIX,githubusercontent.com,select
   - DOMAIN-SUFFIX,github.io,select
-  - DOMAIN-SUFFIX,bilibili.com,select
-  - DOMAIN-SUFFIX,douyin.com,select
+  - DOMAIN-SUFFIX,google.com,select
+  - DOMAIN-SUFFIX,google.com.hk,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,azul.com,select
+  - DOMAIN-SUFFIX,adoptium.net,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,go.dev,select
+  #  - DOMAIN-SUFFIX,bilibili.com,select
+  #  - DOMAIN-SUFFIX,douyin.com,select
+  #  - DOMAIN-SUFFIX,douyinstatic.com,select
+  #  - DOMAIN-SUFFIX,douyinvod.com,select
+  #  - DOMAIN-SUFFIX,zijieapi.com,select
+  #  - DOMAIN-SUFFIX,douyincdn.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinpic.com,select
+  #  - DOMAIN-SUFFIX,bytedance.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  #  - DOMAIN-SUFFIX,douyinliving.com,select
+
+  # 下面的规则是通过上面的rule-provider来确定的
+  - RULE-SET,BanAD,REJECT-DROP
+  - RULE-SET,BanProgramAD,REJECT-DROP
+  - RULE-SET,reject,REJECT-DROP
 
   - RULE-SET,greatfire,DIRECT
   - RULE-SET,SteamCN,DIRECT
@@ -464,9 +524,9 @@ rules:
 
   - GEOSITE,google,select
   - GEOSITE,cn,DIRECT
+  - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT
 
-  #  - GEOIP,CN,DIRECT
-  #  - GEOIP,LAN,DIRECT
   - MATCH,select
 
 geodata-mode: true
