@@ -520,7 +520,7 @@ rules:
   - DOMAIN-SUFFIX,bytedance.com,select
   - DOMAIN-SUFFIX,zjcdn.com,select
   - DOMAIN-SUFFIX,amemv.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,ixigua.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
