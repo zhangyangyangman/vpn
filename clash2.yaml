@@ -529,7 +529,7 @@ rules:
   - DOMAIN-SUFFIX,douyinliving.com,select
 
 
-  - MATCH,select
+  - MATCH,DIRECT
 
 geodata-mode: true
 geox-url:
