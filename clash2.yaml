@@ -519,7 +519,7 @@ rules:
   - DOMAIN-SUFFIX,douyinpic.com,select
   - DOMAIN-SUFFIX,bytedance.com,select
   - DOMAIN-SUFFIX,zjcdn.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,amemv.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
