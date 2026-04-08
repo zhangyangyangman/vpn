@@ -527,7 +527,8 @@ rules:
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
-  -
+
+
   - MATCH,select
 
 geodata-mode: true
