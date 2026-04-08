@@ -521,8 +521,8 @@ rules:
   - DOMAIN-SUFFIX,zjcdn.com,select
   - DOMAIN-SUFFIX,amemv.com,select
   - DOMAIN-SUFFIX,ixigua.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,byteimg.com,select
+  - DOMAIN-SUFFIX,snssdk.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
