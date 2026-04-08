@@ -473,24 +473,24 @@ rules:
   - DOMAIN-SUFFIX,adoptium.net,select
   - DOMAIN-SUFFIX,go.dev,select
   - DOMAIN-SUFFIX,go.dev,select
-  #  - DOMAIN-SUFFIX,bilibili.com,select
-  #  - DOMAIN-SUFFIX,douyin.com,select
-  #  - DOMAIN-SUFFIX,douyinstatic.com,select
-  #  - DOMAIN-SUFFIX,douyinvod.com,select
-  #  - DOMAIN-SUFFIX,zijieapi.com,select
-  #  - DOMAIN-SUFFIX,douyincdn.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinpic.com,select
-  #  - DOMAIN-SUFFIX,bytedance.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
-  #  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,bilibili.com,select
+  - DOMAIN-SUFFIX,douyin.com,select
+  - DOMAIN-SUFFIX,douyinstatic.com,select
+  - DOMAIN-SUFFIX,douyinvod.com,select
+  - DOMAIN-SUFFIX,zijieapi.com,select
+  - DOMAIN-SUFFIX,douyincdn.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinpic.com,select
+  - DOMAIN-SUFFIX,bytedance.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,douyinliving.com,select
 
   # 下面的规则是通过上面的rule-provider来确定的
   - RULE-SET,BanAD,REJECT-DROP
