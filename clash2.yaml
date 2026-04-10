@@ -525,7 +525,7 @@ rules:
   - DOMAIN-SUFFIX,ixigua.com,select
   - DOMAIN-SUFFIX,byteimg.com,select
   - DOMAIN-SUFFIX,snssdk.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
+  - DOMAIN-SUFFIX,huoshanstatic.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
