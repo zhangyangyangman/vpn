@@ -477,8 +477,8 @@ rules:
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,DIRECT
   - RULE-SET,Apple,DIRECT
-  - RULE-SET,ChinaDomain,select
-  - RULE-SET,ChinaCompanyIp,select
+  - RULE-SET,ChinaDomain,DIRECT
+  - RULE-SET,ChinaCompanyIp,DIRECT
   - RULE-SET,LocalAreaNetwork,DIRECT
   - RULE-SET,Microsoft,DIRECT
 
