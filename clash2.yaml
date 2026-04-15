@@ -475,10 +475,10 @@ rules:
   - RULE-SET,applications,DIRECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
-#  - RULE-SET,cncidr,DIRECT
+  #  - RULE-SET,cncidr,DIRECT
   - RULE-SET,Apple,DIRECT
-#  - RULE-SET,ChinaDomain,DIRECT
-#  - RULE-SET,ChinaCompanyIp,DIRECT
+  #  - RULE-SET,ChinaDomain,DIRECT
+  #  - RULE-SET,ChinaCompanyIp,DIRECT
   - RULE-SET,LocalAreaNetwork,DIRECT
   - RULE-SET,Microsoft,DIRECT
 
@@ -509,6 +509,8 @@ rules:
   - DOMAIN-SUFFIX,azul.com,select
   - DOMAIN-SUFFIX,adoptium.net,select
   - DOMAIN-SUFFIX,go.dev,select
+
+  #  哔哩哔哩
   - DOMAIN-SUFFIX,bilibili.com,select
 
   #  抖音相关域名
