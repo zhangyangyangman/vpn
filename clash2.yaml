@@ -495,7 +495,7 @@ rules:
 
   #  - GEOSITE,cn,DIRECT
   #  - GEOIP,CN,DIRECT
-  #  - GEOIP,LAN,DIRECT
+  - GEOIP,LAN,DIRECT
 
   - DOMAIN-SUFFIX,githubrowcontent.com,select
   - DOMAIN-SUFFIX,githubusercontent.com,select
