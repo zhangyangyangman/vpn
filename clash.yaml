@@ -510,17 +510,6 @@ rules:
   - GEOIP,CN,DIRECT
   - GEOIP,LAN,DIRECT
 
-
-  - PROCESS-NAME,douyin_guard.exe,select
-  - PROCESS-NAME,douyin_tray.exe,select
-  - PROCESS-NAME,douyin.exe,select
-  - PROCESS-NAME,douyin_widget.exe,select
-
-  - PROCESS-NAME,cloudmusic.exe,select
-  - PROCESS-NAME,cloudmusic_reporter.exe,select
-  - PROCESS-NAME,douyin_tray.exe,select
-
-
   - MATCH,select
 
 geodata-mode: true
