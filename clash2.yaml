@@ -169,6 +169,38 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 120
+  clashxw0:
+    type: http
+    url: https://clashxw.github.io/uploads/2026/04/0-20260416.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  clashxw1:
+    type: http
+    url: https://clashxw.github.io/uploads/2026/04/1-20260416.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  clashxw2:
+    type: http
+    url: https://clashxw.github.io/uploads/2026/04/2-20260416.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  clashxw3:
+    type: http
+    url: https://clashxw.github.io/uploads/2026/04/3-20260416.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
 
 proxy-groups:
   - name: select
@@ -196,6 +228,10 @@ proxy-groups:
       - tosslk
       - zaixianyouxi
       - ermaozi
+      - clashxw0
+      - clashxw1
+      - clashxw1
+      - clashxw3
 
   - name: load-balance
     type: load-balance
@@ -231,6 +267,10 @@ proxy-groups:
       - tosslk
       - zaixianyouxi
       - ermaozi
+      - clashxw0
+      - clashxw1
+      - clashxw1
+      - clashxw3
 
 rule-providers:
   Apple:
@@ -453,7 +493,7 @@ rules:
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,applications,DIRECT
-#  - RULE-SET,direct,DIRECT
+  #  - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
   #  - RULE-SET,cncidr,DIRECT
   - RULE-SET,Apple,DIRECT
