@@ -145,22 +145,6 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 120
-  windowsclashnode:
-    type: http
-    url: https://windowsclashnode.github.io/uploads/2026/04/0-20260416.yaml
-    interval: 120
-    health-check:
-      enable: true
-      url: https://www.google.com.hk
-      interval: 120
-  wp-content:
-    type: http
-    url: https://clashgithub.com/wp-content/uploads/rss/20260416.yml
-    interval: 120
-    health-check:
-      enable: true
-      url: https://www.google.com.hk
-      interval: 120
   tosslk:
     type: http
     url: https://OTu0hh.tosslk.xyz/97c714b830729202e7465a1953a3e93e
@@ -209,8 +193,6 @@ proxy-groups:
       - v2rayshare
       - go4sharing
       - freenode
-      - windowsclashnode
-      - wp-content
       - tosslk
       - zaixianyouxi
       - ermaozi
@@ -246,8 +228,6 @@ proxy-groups:
       - v2rayshare
       - go4sharing
       - freenode
-      - windowsclashnode
-      - wp-content
       - tosslk
       - zaixianyouxi
       - ermaozi
