@@ -514,7 +514,7 @@ rules:
   - PROCESS-NAME,douyin_guard.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
   - PROCESS-NAME,douyin.exe,select
-  - PROCESS-NAME,douyin_tray.exe,select
+  - PROCESS-NAME,douyin_widget.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
