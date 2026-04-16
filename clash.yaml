@@ -437,8 +437,6 @@ rule-providers:
     interval: 36000
 
 rules:
-
-
   # 这些是自定义规则，想要的可以继续加。
 
   - IP-CIDR, 168.1.0.0/16, DIRECT
@@ -508,8 +506,19 @@ rules:
 
   - GEOSITE,google,select
   - GEOSITE,cn,DIRECT
+
   - GEOIP,CN,DIRECT
   - GEOIP,LAN,DIRECT
+
+
+  - PROCESS-NAME,douyin_guard.exe,select
+  - PROCESS-NAME,douyin_tray.exe,select
+  - PROCESS-NAME,douyin.exe,select
+  - PROCESS-NAME,douyin_tray.exe,select
+  - PROCESS-NAME,douyin_tray.exe,select
+  - PROCESS-NAME,douyin_tray.exe,select
+  - PROCESS-NAME,douyin_tray.exe,select
+
 
   - MATCH,select
 
