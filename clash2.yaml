@@ -461,6 +461,7 @@ rules:
 
   # 这些是自定义规则，想要的可以继续加。
   - IP-CIDR, 168.1.0.0/16, DIRECT
+  - IP-CIDR, 10.10.0.0/16, DIRECT
   - IP-CIDR, 172.16.0.0/16, DIRECT
   - IP-CIDR, 192.168.0.0/16, DIRECT
 
@@ -581,6 +582,3 @@ geox-url:
   #  geosite: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/geosite.dat"
   geosite: "https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat"
   mmdb: "https://fastly.jsdelivr.net/gh/MerlinKodo/meta-rules-dat@release/country.mmdb"
-
-
-
