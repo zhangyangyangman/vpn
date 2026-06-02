@@ -508,8 +508,11 @@ rules:
   - DOMAIN-SUFFIX,bytegoofy.com,select
   - DOMAIN-SUFFIX,bytetos.com,select
   - DOMAIN-SUFFIX,bytegecko.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,toutiao.com,select
+  - DOMAIN-SUFFIX,iesdouyin.com,select
+  - DOMAIN-SUFFIX,ibytedtos.com,select
+  - DOMAIN-SUFFIX,pstatp.com,select
+  - DOMAIN-SUFFIX,byteoversea.com,select
 
 
   - PROCESS-NAME,douyin_guard.exe,select
