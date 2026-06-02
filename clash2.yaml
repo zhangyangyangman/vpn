@@ -528,9 +528,10 @@ rules:
   - PROCESS-NAME,douyin_tray.exe,select
   - PROCESS-NAME,douyin.exe,select
   - PROCESS-NAME,douyin_widget.exe,select
+  - PROCESS-NAME,douyin_browser.exe,select
 
   - PROCESS-NAME,cloudmusic.exe,select
   - PROCESS-NAME,cloudmusic_reporter.exe,select
-
+  - PROCESS-NAME,cloudmusic_service.exe,select
 
   - MATCH,DIRECT
