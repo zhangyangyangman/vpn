@@ -1,6 +1,6 @@
 mixed-port: 12345
 #---------------------------------------------------#
-## 更新：2025-08-30 10:36:22
+## 更新：2026-06-02 10:13:00
 ## 感谢：https://github.com/Hackl0us/SS-Rule-Snippet
 #---------------------------------------------------#
 
@@ -45,19 +45,19 @@ dns:
   #   geoip: true
   #   ipcidr:
   #     - 240.0.0.0/4
-  # fake-ip-filter:
-  #   - "*.lan"
-  #   - "*.localdomain"
-  #   - "*.example"
-  #   - "*.invalid"
-  #   - "*.localhost"
-  #   - "*.test"
-  #   - "*.local"
-  #   - "*.home.arpa"
-  #   - "router.asus.com"
-  #   - "localhost.sec.qq.com"
-  #   - "localhost.ptlogin2.qq.com"
-  #   - "+.msftconnecttest.com"
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - "router.asus.com"
+    - "localhost.sec.qq.com"
+    - "localhost.ptlogin2.qq.com"
+    - "+.msftconnecttest.com"
 tun:
   enable: true
   auto-route: true
@@ -204,8 +204,7 @@ proxy-providers:
 
 proxy-groups:
   - name: select
-    type: url-test
-    url: https://www.google.com.hk
+    type: select
     proxies:
       - autoselect
       - load-balance
@@ -230,7 +229,7 @@ proxy-groups:
       - ermaozi
       - clashxw0
       - clashxw1
-      - clashxw1
+      - clashxw2
       - clashxw3
 
   - name: load-balance
@@ -269,7 +268,7 @@ proxy-groups:
       - ermaozi
       - clashxw0
       - clashxw1
-      - clashxw1
+      - clashxw2
       - clashxw3
 
 rule-providers:
@@ -487,7 +486,6 @@ rules:
   - DOMAIN-SUFFIX,go.dev,select
   - DOMAIN-SUFFIX,azul.com,select
   - DOMAIN-SUFFIX,adoptium.net,select
-  - DOMAIN-SUFFIX,go.dev,select
 
   #  哔哩哔哩
   - DOMAIN-SUFFIX,bilibili.com,select
@@ -512,37 +510,6 @@ rules:
   - DOMAIN-SUFFIX,bytegecko.com,select
   - DOMAIN-SUFFIX,douyinliving.com,select
   - DOMAIN-SUFFIX,toutiao.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
-  - DOMAIN-SUFFIX,douyinliving.com,select
 
 
   - PROCESS-NAME,douyin_guard.exe,select
@@ -552,7 +519,6 @@ rules:
 
   - PROCESS-NAME,cloudmusic.exe,select
   - PROCESS-NAME,cloudmusic_reporter.exe,select
-  - PROCESS-NAME,douyin_tray.exe,select
 
 
   - MATCH,DIRECT
