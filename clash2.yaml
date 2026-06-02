@@ -518,6 +518,11 @@ rules:
   - DOMAIN-SUFFIX,music.163.com,select
   - DOMAIN-SUFFIX,music.126.net,select
 
+  #  QQ音乐
+  - DOMAIN-SUFFIX,y.qq.com,select
+  - DOMAIN-SUFFIX,qqmusic.qq.com,select
+  - DOMAIN-SUFFIX,music.qq.com,select
+
 
   - PROCESS-NAME,douyin_guard.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
