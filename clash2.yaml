@@ -514,16 +514,16 @@ rules:
   - DOMAIN-SUFFIX,pstatp.com,select
   - DOMAIN-SUFFIX,byteoversea.com,select
 
-  #  网易云音乐
+  # 网易云音乐
   - DOMAIN-SUFFIX,music.163.com,select
   - DOMAIN-SUFFIX,music.126.net,select
 
-  #  QQ音乐
+  # QQ音乐
   - DOMAIN-SUFFIX,y.qq.com,select
   - DOMAIN-SUFFIX,qqmusic.qq.com,select
   - DOMAIN-SUFFIX,music.qq.com,select
 
-
+  # 抖音进程
   - PROCESS-NAME,douyin_guard.exe,select
   - PROCESS-NAME,douyin_tray.exe,select
   - PROCESS-NAME,douyin.exe,select
@@ -545,8 +545,12 @@ rules:
   - PROCESS-NAME,app_shell_updater.exe,select
   - PROCESS-NAME,adjust_get_current_system_volume_vista_plus.exe,select
 
+  #网易云音乐进程
   - PROCESS-NAME,cloudmusic.exe,select
   - PROCESS-NAME,cloudmusic_reporter.exe,select
   - PROCESS-NAME,cloudmusic_service.exe,select
+  - PROCESS-NAME,cloudmusic_util.exe,select
+  - PROCESS-NAME,minidump_stackwalk.exe,select
+  - PROCESS-NAME,cssdk.exe,select
 
   - MATCH,DIRECT
