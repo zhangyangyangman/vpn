@@ -529,6 +529,21 @@ rules:
   - PROCESS-NAME,douyin.exe,select
   - PROCESS-NAME,douyin_widget.exe,select
   - PROCESS-NAME,douyin_browser.exe,select
+  - PROCESS-NAME,app_guard.exe,select
+  - PROCESS-NAME,douyin_doctor.exe,select
+  - PROCESS-NAME,dump_reporter.exe,select
+  - PROCESS-NAME,elevate.exe,select
+  - PROCESS-NAME,elevation_service.exe,select
+  - PROCESS-NAME,new_douyin.exe,select
+  - PROCESS-NAME,parfait_crash_handler.exe,select
+  - PROCESS-NAME,push_detect.exe,select
+  - PROCESS-NAME,tt_crash_reporter.exe,select
+  - PROCESS-NAME,UpdateDriverDaemon.exe,select
+  - PROCESS-NAME,UpdateDriverDaemonX64.exe,select
+  - PROCESS-NAME,update-driver.exe,select
+  - PROCESS-NAME,systeminfo.exe,select
+  - PROCESS-NAME,app_shell_updater.exe,select
+  - PROCESS-NAME,adjust_get_current_system_volume_vista_plus.exe,select
 
   - PROCESS-NAME,cloudmusic.exe,select
   - PROCESS-NAME,cloudmusic_reporter.exe,select
