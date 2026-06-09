@@ -517,6 +517,7 @@ rules:
   # 网易云音乐
   - DOMAIN-SUFFIX,music.163.com,select
   - DOMAIN-SUFFIX,music.126.net,select
+  - DOMAIN-SUFFIX,kuiniuca.com,select
 
   # QQ音乐
   - DOMAIN-SUFFIX,y.qq.com,select
