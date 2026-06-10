@@ -575,4 +575,6 @@ rules:
   - PROCESS-NAME,StartDesktopProjection64.exe,select
   - PROCESS-NAME,StartDesktopProjectionForXP.exe,select
 
+  - PROCESS-NAME,jvms.exe,select
+
   - MATCH,DIRECT
