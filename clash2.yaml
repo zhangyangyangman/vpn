@@ -554,4 +554,25 @@ rules:
   - PROCESS-NAME,minidump_stackwalk.exe,select
   - PROCESS-NAME,cssdk.exe,select
 
+  #QQ音乐进程
+  - PROCESS-NAME,AutoPowerOff.exe,select
+  - PROCESS-NAME,qmbrowser\BugReport.exe,select
+  - PROCESS-NAME,DataTransformex.exe,select
+  - PROCESS-NAME,DesktopDynamicLyric.exe,select
+  - PROCESS-NAME,qmbrowser\qmbrowser.exe,select
+  - PROCESS-NAME,QMDesktopAnimation.exe,select
+  - PROCESS-NAME,QMDriverHelper.exe,select
+  - PROCESS-NAME,QMDriverHelperx64.exe,select
+  - PROCESS-NAME,QMWeiyun.exe,select
+  - PROCESS-NAME,QQMusic.exe,select
+  - PROCESS-NAME,QQMusicAgent.exe,select
+  - PROCESS-NAME,QQMusicExternal.exe,select
+  - PROCESS-NAME,QQMusicService.exe,select
+  - PROCESS-NAME,QQMusicSvr.exe,select
+  - PROCESS-NAME,QQMusicUninst.exe,select
+  - PROCESS-NAME,QQMusicUp.exe,select
+  - PROCESS-NAME,StartDesktopProjection32.exe,select
+  - PROCESS-NAME,StartDesktopProjection64.exe,select
+  - PROCESS-NAME,StartDesktopProjectionForXP.exe,select
+
   - MATCH,DIRECT
