@@ -462,20 +462,6 @@ rules:
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
 
-  - RULE-SET,greatfire,DIRECT
-  - RULE-SET,SteamCN,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,applications,DIRECT
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,Apple,DIRECT
-  - RULE-SET,ChinaDomain,DIRECT
-  - RULE-SET,ChinaCompanyIp,DIRECT
-  - RULE-SET,LocalAreaNetwork,DIRECT
-  - RULE-SET,Microsoft,DIRECT
 
 
   - RULE-SET,gfw,select
@@ -590,5 +576,20 @@ rules:
   - PROCESS-NAME,StartDesktopProjectionForXP.exe,select
 
   - PROCESS-NAME,jvms.exe,select
+
+  - RULE-SET,greatfire,DIRECT
+  - RULE-SET,SteamCN,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,Apple,DIRECT
+  - RULE-SET,ChinaDomain,DIRECT
+  - RULE-SET,ChinaCompanyIp,DIRECT
+  - RULE-SET,LocalAreaNetwork,DIRECT
+  - RULE-SET,Microsoft,DIRECT
 
   - MATCH,DIRECT
