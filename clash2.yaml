@@ -462,7 +462,10 @@ rules:
   - RULE-SET,BanProgramAD,REJECT-DROP
   - RULE-SET,reject,REJECT-DROP
 
-
+  - IP-CIDR, 168.1.0.0/16, DIRECT
+  - IP-CIDR, 10.10.0.0/16, DIRECT
+  - IP-CIDR, 172.16.0.0/16, DIRECT
+  - IP-CIDR, 192.168.0.0/16, DIRECT
 
   - RULE-SET,gfw,select
   - RULE-SET,tld-not-cn,select
