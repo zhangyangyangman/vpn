@@ -474,7 +474,7 @@ rules:
   - RULE-SET,ProxyMedia,select
   - RULE-SET,GoogleCN,select
   - RULE-SET,google,select
-  - RULE-SET,proxy,select
+  #  - RULE-SET,proxy,select
   - RULE-SET,telegramcidr,select
   - GEOSITE,google,select
 
