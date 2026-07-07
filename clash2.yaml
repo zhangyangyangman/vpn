@@ -489,6 +489,8 @@ rules:
   - DOMAIN-SUFFIX,go.dev,select
   - DOMAIN-SUFFIX,azul.com,select
   - DOMAIN-SUFFIX,adoptium.net,select
+  - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,openvpn.org,select
 
   #  哔哩哔哩
   - DOMAIN-SUFFIX,bilibili.com,select

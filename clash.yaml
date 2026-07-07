@@ -495,6 +495,7 @@ rules:
   - DOMAIN-SUFFIX,azul.com,select
   - DOMAIN-SUFFIX,adoptium.net,select
   - DOMAIN-SUFFIX,go.dev,select
+  - DOMAIN-SUFFIX,openvpn.org,select
 
   # 下面的规则是通过上面的rule-provider来确定的
   - RULE-SET,BanAD,REJECT-DROP
