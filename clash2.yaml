@@ -467,10 +467,10 @@ rules:
   - IP-CIDR, 172.16.0.0/16, DIRECT
   - IP-CIDR, 192.168.0.0/16, DIRECT
 
-  - RULE-SET,gfw,select
+  #  - RULE-SET,gfw,select
   - RULE-SET,tld-not-cn,select
   - RULE-SET,Telegram,select
-  - RULE-SET,ProxyLite,select
+  #  - RULE-SET,ProxyLite,select
   - RULE-SET,ProxyMedia,select
   - RULE-SET,GoogleCN,select
   - RULE-SET,google,select
