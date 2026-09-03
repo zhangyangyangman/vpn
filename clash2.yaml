@@ -279,6 +279,7 @@ proxy-groups:
       - daily_free_vpn
       - clash-proxy-cleaner
       - linzjian666
+      - 0xRadikal
 
   - name: load-balance
     type: load-balance
@@ -322,6 +323,7 @@ proxy-groups:
       - daily_free_vpn
       - clash-proxy-cleaner
       - linzjian666
+      - 0xRadikal
 
 rule-providers:
   Apple:
