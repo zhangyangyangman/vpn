@@ -147,7 +147,7 @@ proxy-providers:
       interval: 120
   tosslk:
     type: http
-    url: https://OTu0hh.tosslk.xyz/97c714b830729202e7465a1953a3e93e
+    url: https://9TW3qY.tosslk.xyz/4b7cb8422dc70277571267a27bf0925a
     interval: 120
     health-check:
       enable: true
