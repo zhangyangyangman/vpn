@@ -201,6 +201,50 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 120
+  TG-NAV:
+    type: http
+    url: https://raw.githubusercontent.com/TG-NAV/nodeshare/refs/heads/main/clash.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  daily_free_vpn:
+    type: http
+    url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/Clash.yml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  clash-proxy-cleaner:
+    type: http
+    url: https://raw.githubusercontent.com/uykb/clash-proxy-cleaner/main/subscribe.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  linzjian666:
+    type: http
+    url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+  0xRadikal:
+    type: http
+    url: https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/fast/clash.yaml
+    interval: 120
+    health-check:
+      enable: true
+      url: https://www.google.com.hk
+      interval: 120
+
+
+
+
 
 proxy-groups:
   - name: select
@@ -231,6 +275,10 @@ proxy-groups:
       - clashxw1
       - clashxw2
       - clashxw3
+      - TG-NAV
+      - daily_free_vpn
+      - clash-proxy-cleaner
+      - linzjian666
 
   - name: load-balance
     type: load-balance
@@ -270,6 +318,10 @@ proxy-groups:
       - clashxw1
       - clashxw2
       - clashxw3
+      - TG-NAV
+      - daily_free_vpn
+      - clash-proxy-cleaner
+      - linzjian666
 
 rule-providers:
   Apple:
