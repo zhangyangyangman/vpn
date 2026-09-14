@@ -76,171 +76,171 @@ proxy-providers:
   snakem982:
     type: http
     url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   hello-world-1989:
     type: http
     url: https://raw.githubusercontent.com/hello-world-1989/cn-news/refs/heads/main/clash.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   nodesfree:
     type: http
     url: https://nodesfree.github.io/clashnode/clash.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   passcro:
     type: http
     url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   v2rayshare:
     type: http
-    url: https://static.v2rayshare.net/2026/09/20260907.yaml
-    interval: 120
+    url: https://static.v2rayshare.net/2026/09/20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   go4sharing:
     type: http
     url: https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20260907-clash.yaml
-    interval: 120
+    url: https://freenode.openrunner.net/uploads/20260914-clash.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   tosslk:
     type: http
     url: https://9TW3qY.tosslk.xyz/4b7cb8422dc70277571267a27bf0925a
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   zaixianyouxi:
     type: http
-    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/9/20260907.yaml
-    interval: 120
+    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/9/20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   ermaozi:
     type: http
     url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clashxw0:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/0-20260907.yaml
-    interval: 120
+    url: https://clashxw.github.io/uploads/2026/09/0-20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clashxw1:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/1-20260907.yaml
-    interval: 120
+    url: https://clashxw.github.io/uploads/2026/09/1-20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clashxw2:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/2-20260907.yaml
-    interval: 120
+    url: https://clashxw.github.io/uploads/2026/09/2-20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clashxw3:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/3-20260907.yaml
-    interval: 120
+    url: https://clashxw.github.io/uploads/2026/09/3-20260914.yaml
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   TG-NAV:
     type: http
     url: https://raw.githubusercontent.com/TG-NAV/nodeshare/refs/heads/main/clash.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   daily_free_vpn:
     type: http
     url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/Clash.yml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   clash-proxy-cleaner:
     type: http
     url: https://raw.githubusercontent.com/uykb/clash-proxy-cleaner/main/subscribe.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   linzjian666:
     type: http
     url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
   0xRadikal:
     type: http
     url: https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/fast/clash.yaml
-    interval: 120
+    interval: 30
     health-check:
       enable: true
       url: https://www.google.com.hk
-      interval: 120
+      interval: 30
 
 
 
@@ -331,84 +331,84 @@ rule-providers:
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/Apple.list"
   Telegram:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/Telegram.list"
   ProxyLite:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/ProxyLite.list"
   ChinaDomain:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/ChinaDomain.list"
   ChinaCompanyIp:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/ChinaCompanyIp.list"
   ProxyMedia:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/ProxyMedia.list"
   LocalAreaNetwork:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/LocalAreaNetwork.list"
   Microsoft:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/Microsoft.list"
   GoogleCN:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/GoogleCN.list"
   BanAD:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/BanAD.list"
   BanProgramAD:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/BanProgramAD.list"
   SteamCN:
     type: http
     behavior: "classical"
     url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
     format: "text"
-    interval: 120
+    interval: 30
     path: "./Clash/SteamCN.list"
 
   reject:
@@ -416,91 +416,91 @@ rule-providers:
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/reject.yaml
-    interval: 120
+    interval: 30
 
   icloud:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
     path: ./ruleset/icloud.yaml
-    interval: 120
+    interval: 30
 
   apple:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
     path: ./ruleset/apple.yaml
-    interval: 120
+    interval: 30
 
   google:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
     path: ./ruleset/google.yaml
-    interval: 120
+    interval: 30
 
   proxy:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
     path: ./ruleset/proxy.yaml
-    interval: 120
+    interval: 30
 
   direct:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
     path: ./ruleset/direct.yaml
-    interval: 120
+    interval: 30
 
   private:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
     path: ./ruleset/private.yaml
-    interval: 120
+    interval: 30
 
   gfw:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     path: ./ruleset/gfw.yaml
-    interval: 120
+    interval: 30
 
   greatfire:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
     path: ./ruleset/greatfire.yaml
-    interval: 120
+    interval: 30
 
   tld-not-cn:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
-    interval: 120
+    interval: 30
 
   telegramcidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
-    interval: 120
+    interval: 30
 
   cncidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
-    interval: 120
+    interval: 30
 
   lancidr:
     type: http
     behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
-    interval: 120
+    interval: 30
 
   applications:
     type: http
