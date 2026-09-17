@@ -123,7 +123,7 @@ proxy-providers:
       interval: 30
   v2rayshare:
     type: http
-    url: https://static.v2rayshare.net/2026/09/20260914.yaml
+    url: https://static.v2rayshare.net/2026/09/20260917.yaml
     interval: 30
     health-check:
       enable: true
@@ -139,7 +139,7 @@ proxy-providers:
       interval: 30
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20260914-clash.yaml
+    url: https://freenode.openrunner.net/uploads/20260917-clash.yaml
     interval: 30
     health-check:
       enable: true
@@ -155,7 +155,7 @@ proxy-providers:
       interval: 30
   zaixianyouxi:
     type: http
-    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/9/20260914.yaml
+    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/9/20260917.yaml
     interval: 30
     health-check:
       enable: true
@@ -171,7 +171,7 @@ proxy-providers:
       interval: 30
   clashxw0:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/0-20260914.yaml
+    url: https://clashxw.github.io/uploads/2026/09/0-20260917.yaml
     interval: 30
     health-check:
       enable: true
@@ -179,7 +179,7 @@ proxy-providers:
       interval: 30
   clashxw1:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/1-20260914.yaml
+    url: https://clashxw.github.io/uploads/2026/09/1-20260917.yaml
     interval: 30
     health-check:
       enable: true
@@ -187,7 +187,7 @@ proxy-providers:
       interval: 30
   clashxw2:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/2-20260914.yaml
+    url: https://clashxw.github.io/uploads/2026/09/2-20260917.yaml
     interval: 30
     health-check:
       enable: true
@@ -195,7 +195,7 @@ proxy-providers:
       interval: 30
   clashxw3:
     type: http
-    url: https://clashxw.github.io/uploads/2026/09/3-20260914.yaml
+    url: https://clashxw.github.io/uploads/2026/09/3-20260917.yaml
     interval: 30
     health-check:
       enable: true
