@@ -537,6 +537,7 @@ rules:
   - DOMAIN-SUFFIX,spring.io,DIRECT
   - DOMAIN-SUFFIX,7-zip.org,DIRECT
 
+  - DOMAIN-SUFFIX,docker.com,select
   - DOMAIN-SUFFIX,githubrowcontent.com,select
   - DOMAIN-SUFFIX,githubusercontent.com,select
   - DOMAIN-SUFFIX,github.io,select

@@ -532,6 +532,7 @@ rules:
   - RULE-SET,telegramcidr,select
   - GEOSITE,google,select
 
+  - DOMAIN-SUFFIX,docker.com,select
   - DOMAIN-SUFFIX,githubrowcontent.com,select
   - DOMAIN-SUFFIX,githubusercontent.com,select
   - DOMAIN-SUFFIX,github.io,select
