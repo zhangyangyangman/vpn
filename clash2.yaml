@@ -201,14 +201,6 @@ proxy-providers:
       enable: true
       url: https://www.google.com.hk
       interval: 30
-  TG-NAV:
-    type: http
-    url: https://raw.githubusercontent.com/TG-NAV/nodeshare/refs/heads/main/clash.yaml
-    interval: 30
-    health-check:
-      enable: true
-      url: https://www.google.com.hk
-      interval: 30
   daily_free_vpn:
     type: http
     url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/Clash.yml
@@ -279,7 +271,6 @@ proxy-groups:
       - clashxw1
       - clashxw2
       - clashxw3
-      - TG-NAV
       - daily_free_vpn
       - clash-proxy-cleaner
       - linzjian666
@@ -294,7 +285,7 @@ proxy-groups:
     # 失效最大次数删除节点
     node-fail-limit: 5
 
-      # 散列
+    # 散列
     # strategy: consistent-hashing
     # # 轮询
     strategy: round-robin
@@ -303,7 +294,7 @@ proxy-groups:
       # 粘性会话,将特定的用户会话绑定到同一台服务器上
       # strategy: sticky-sessions
       # 最小负载
-      # strategy: least-load
+    # strategy: least-load
     # 随机
     # strategy: random
     use:
@@ -323,7 +314,6 @@ proxy-groups:
       - clashxw1
       - clashxw2
       - clashxw3
-      - TG-NAV
       - daily_free_vpn
       - clash-proxy-cleaner
       - linzjian666
