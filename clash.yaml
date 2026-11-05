@@ -139,7 +139,7 @@ proxy-providers:
       interval: 30
   freenode:
     type: http
-    url: https://freenode.openrunner.net/uploads/20261105-clash.yaml
+    url: https://free.datiya.com/uploads/20261105-clash.yaml
     interval: 30
     health-check:
       enable: true
@@ -291,7 +291,7 @@ proxy-groups:
     strategy: round-robin
       # 最小时延
       # strategy: least-latency
-      # 粘性会话,将特定的用户会话绑定到同一台服务器上
+    # 粘性会话,将特定的用户会话绑定到同一台服务器上
     # strategy: sticky-sessions
     # 最小负载
     # strategy: least-load
