@@ -255,17 +255,17 @@ proxy-groups:
     interval: 5
     #    proxies:
     use:
-      - snakem982
-      - nodesfree
+      #      - snakem982
+      #      - nodesfree
       - hello-world-1989
       - clash-provider
       - NoMoreWalls
       - passcro
-      - v2rayshare
+      #      - v2rayshare
       - go4sharing
-      - freenode
-      - tosslk
-      - zaixianyouxi
+      #      - freenode
+      #      - tosslk
+      #      - zaixianyouxi
       - ermaozi
       - clashxw0
       - clashxw1
@@ -289,26 +289,26 @@ proxy-groups:
     # strategy: consistent-hashing
     # # 轮询
     strategy: round-robin
-      # 最小时延
-      # strategy: least-latency
-      # 粘性会话,将特定的用户会话绑定到同一台服务器上
+    # 最小时延
+    # strategy: least-latency
+    # 粘性会话,将特定的用户会话绑定到同一台服务器上
     # strategy: sticky-sessions
     # 最小负载
     # strategy: least-load
     # 随机
     # strategy: random
     use:
-      - snakem982
-      - nodesfree
+      #      - snakem982
+      #      - nodesfree
       - hello-world-1989
       - clash-provider
       - NoMoreWalls
       - passcro
-      - v2rayshare
+      #      - v2rayshare
       - go4sharing
-      - freenode
-      - tosslk
-      - zaixianyouxi
+      #      - freenode
+      #      - tosslk
+      #      - zaixianyouxi
       - ermaozi
       - clashxw0
       - clashxw1
