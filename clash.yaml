@@ -73,14 +73,15 @@ tun:
         - "1.0.0.1"
 # proxy provider start here
 proxy-providers:
-    snakem982:
-        type: http
-        url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
-        interval: 30
-        health-check:
-            enable: true
-            url: https://www.google.com.hk
-            interval: 30
+    # 无效：404 Not Found（2026-11-09 验证）
+    # snakem982:
+    #     type: http
+    #     url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+    #     interval: 30
+    #     health-check:
+    #         enable: true
+    #         url: https://www.google.com.hk
+    #         interval: 30
     hello-world-1989:
         type: http
         url: https://raw.githubusercontent.com/hello-world-1989/cn-news/refs/heads/main/clash.yaml
@@ -89,14 +90,15 @@ proxy-providers:
             enable: true
             url: https://www.google.com.hk
             interval: 30
-    nodesfree:
-        type: http
-        url: https://nodesfree.github.io/clashnode/clash.yaml
-        interval: 30
-        health-check:
-            enable: true
-            url: https://www.google.com.hk
-            interval: 30
+    # 无效：HTTP 200 但内容为空（0 字节，2026-11-09 验证）
+    # nodesfree:
+    #     type: http
+    #     url: https://nodesfree.github.io/clashnode/clash.yaml
+    #     interval: 30
+    #     health-check:
+    #         enable: true
+    #         url: https://www.google.com.hk
+    #         interval: 30
     clash-provider:
         type: http
         url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
@@ -145,14 +147,15 @@ proxy-providers:
             enable: true
             url: https://www.google.com.hk
             interval: 30
-    tosslk:
-        type: http
-        url: https://9TW3qY.tosslk.xyz/4b7cb8422dc70277571267a27bf0925a
-        interval: 30
-        health-check:
-            enable: true
-            url: https://www.google.com.hk
-            interval: 30
+    # 无效：HTTP 403 / 连接超时（Cloudflare 拒绝，2026-11-09 验证）
+    # tosslk:
+    #     type: http
+    #     url: https://9TW3qY.tosslk.xyz/4b7cb8422dc70277571267a27bf0925a
+    #     interval: 30
+    #     health-check:
+    #         enable: true
+    #         url: https://www.google.com.hk
+    #         interval: 30
     zaixianyouxi:
         type: http
         url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/11/20261109.yaml
