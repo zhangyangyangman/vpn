@@ -16,6 +16,9 @@ mode: rule
 # 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
 # 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
 log-level: info
+# 加速可用节点判定：统一延迟计算（排除握手干扰）、TCP 并发连接（同时尝试多个 IP）
+unified-delay: true
+tcp-concurrent: true
 # Clash 的 RESTful API
 # external-controller: "127.0.0.1:9090"
 
@@ -79,152 +82,152 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   hello-world-1989:
     type: http
     url: https://raw.githubusercontent.com/hello-world-1989/cn-news/refs/heads/main/clash.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clash-provider:
     type: http
     url: https://raw.githubusercontent.com/vxiaov/free_proxies/main/clash/clash.provider.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   NoMoreWalls:
     type: http
     url: https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   passcro:
     type: http
     url: https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   v2rayshare:
     type: http
     url: https://static.v2rayshare.net/2026/11/20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   go4sharing:
     type: http
     url: https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   freenode:
     type: http
     url: https://free.datiya.com/uploads/20261109-clash.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   zaixianyouxi:
     type: http
     url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/11/20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   ermaozi:
     type: http
     url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clashxw0:
     type: http
     url: https://node.freeclashnode.com/uploads/2026/11/0-20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clashxw1:
     type: http
     url: https://node.freeclashnode.com/uploads/2026/11/1-20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clashxw2:
     type: http
     url: https://node.freeclashnode.com/uploads/2026/11/2-20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clashxw3:
     type: http
     url: https://node.freeclashnode.com/uploads/2026/11/3-20261109.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   daily_free_vpn:
     type: http
     url: https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/refs/heads/main/sub/Clash.yml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   clash-proxy-cleaner:
     type: http
     url: https://raw.githubusercontent.com/uykb/clash-proxy-cleaner/main/subscribe.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   linzjian666:
     type: http
     url: https://raw.githubusercontent.com/linzjian666/chromego_extractor/main/outputs/clash_meta_warp.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   0xRadikal:
     type: http
     url: https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/fast/clash.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   FreeSubsCheck:
     type: http
     url: https://raw.githubusercontent.com/oversizexl/FreeSubsCheck/main/all.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   # ---------- 以下为 2026-11-09 检索并验证新增（HTTP 200，内容含 proxies，仓库当日有更新） ----------
   Ruk1ng001:
     type: http
@@ -232,40 +235,40 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   kooker:
     type: http
     url: https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/mihomo.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   mahdibland:
     type: http
     url: https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   anaer:
     type: http
     url: https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
   ripaojiedian:
     type: http
     url: https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
     interval: 30
     health-check:
       enable: true
-      url: https://www.google.com.hk
-      interval: 30
+      url: https://www.gstatic.com/generate_204
+      interval: 120
 
 proxy-groups:
   - name: select
@@ -276,7 +279,7 @@ proxy-groups:
 
   - name: autoselect
     type: url-test
-    url: https://www.google.com.hk
+    url: https://www.gstatic.com/generate_204
     interval: 5
     #    proxies:
     use:
@@ -306,7 +309,7 @@ proxy-groups:
 
   - name: load-balance
     type: load-balance
-    url: https://www.google.com.hk
+    url: https://www.gstatic.com/generate_204
     interval: 5
     # 检测是否失效时间间隔
     node-delete-interval: 5
