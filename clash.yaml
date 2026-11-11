@@ -118,7 +118,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   v2rayshare:
     type: http
-    url: https://static.v2rayshare.net/2026/11/20261110.yaml
+    url: https://static.v2rayshare.net/2026/11/20261111.yaml
     interval: 30
     health-check:
       enable: true
@@ -134,7 +134,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   freenode:
     type: http
-    url: https://free.datiya.com/uploads/20261109-clash.yaml
+    url: https://free.datiya.com/uploads/20261111-clash.yaml
     interval: 30
     health-check:
       enable: true
@@ -142,7 +142,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   zaixianyouxi:
     type: http
-    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/11/20261110.yaml
+    url: https://sfdr.zaixianyouxi.dpdns.org/uploads/2026/11/20261111.yaml
     interval: 30
     health-check:
       enable: true
@@ -158,7 +158,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   clashxw0:
     type: http
-    url: https://node.freeclashnode.com/uploads/2026/11/0-20261110.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/0-20261111.yaml
     interval: 30
     health-check:
       enable: true
@@ -166,7 +166,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   clashxw1:
     type: http
-    url: https://node.freeclashnode.com/uploads/2026/11/1-20261110.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/1-20261111.yaml
     interval: 30
     health-check:
       enable: true
@@ -174,7 +174,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   clashxw2:
     type: http
-    url: https://node.freeclashnode.com/uploads/2026/11/2-20261110.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/2-20261111.yaml
     interval: 30
     health-check:
       enable: true
@@ -182,7 +182,7 @@ proxy-providers: # 注意：旧的 source/clash-meta.yaml 已 404，改用 sourc
       interval: 120
   clashxw3:
     type: http
-    url: https://node.freeclashnode.com/uploads/2026/11/3-20261110.yaml
+    url: https://node.freeclashnode.com/uploads/2026/11/3-20261111.yaml
     interval: 30
     health-check:
       enable: true
